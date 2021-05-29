@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WL-test</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <table class="table"></table>
+
+    <form class="form">
+      <label class="label"
+        ><span class="text">Name: </span
+        ><input class="input" type="text" name="name"
+      /></label>
+
+      <label class="label"
+        ><span class="text">Username: </span
+        ><input class="input" type="text" name="username"
+      /></label>
+
+      <label class="label"
+        ><span class="text">Email: </span
+        ><input class="input" type="text" name="email"
+      /></label>
+
+      <label class="label"
+        ><span class="text">Web Site: </span
+        ><input class="input" type="text" name="website" />
+      </label>
+
+      <button
+        class="button button__add-user"
+        type="submit"
+        data-action="add-user"
+      >
+        Add User
+      </button>
+    </form>
+
+    <div class="modal js-modal">
+      <div class="modal__overlay js-modal__overlay"></div>
+
+      <div class="modal__content js-modal__content"></div>
+
+      <button
+        type="button"
+        class="modal__button"
+        data-action="close-modal"
+      ></button>
+    </div>
+
+    <script src="./js/users.js" type="module"></script>
+  </body>
+</html>
