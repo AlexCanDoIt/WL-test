@@ -55,10 +55,10 @@ function render() {
 }
 
 function handleClick(e) {
-  const id = Number(e.path.find(({ nodeName }) => nodeName === 'TR').id);
+  const id = Number(e.path.find(({ nodeName }) => nodeName === 'TR')?.id);
   const { nodeName, dataset } = e.target;
 
-  if (nodeName === 'TH') {
+  if (!id) {
     userFilter(dataset.value);
     return;
   }
